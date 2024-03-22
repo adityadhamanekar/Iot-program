@@ -19,6 +19,7 @@ READ_API_KEY='NLB6NHHBZ7QL5HXV' # Modify READ_API_KEY
 CHANNEL_ID='2431265'
 
 url = f"http://api.thingspeak.com/channels/{CHANNEL_ID}/feeds/last.json?api_key={READ_API_KEY}"
+
 connection = request.urlopen(url)
 response = connection.read()
 data = json.loads(response)
