@@ -1,6 +1,6 @@
 /* Styles from previous code unchanged */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,9 +27,9 @@ pre {
 
 .copy-button {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  background-color: #66d9ef; /* Blue */
+  top: 22px;
+  right: 22px;
+  background-color: #878b8c; /* Blue */
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -38,7 +38,7 @@ pre {
 }
 
 .copy-button:hover {
-  background-color: #5cb8d1; /* Lighter blue */
+  background-color: #76c16b; /* Lighter blue */
 }
 
 /* Dark mode specific styles */
@@ -110,8 +110,7 @@ pre {
   color: #ae81ff; /* Purple */
 }
 
-.hljs-attribute
- {
+.hljs-attribute {
   color: #66d9ef; /* Blue */
 }
 
@@ -121,7 +120,6 @@ pre {
 .hljs-name {
   font-weight: bold;
 }
-
 
 .hljs-meta,
 .hljs-attribute,
@@ -133,7 +131,6 @@ pre {
 .hljs-link {
   color: #f92672; /* Pink */
 }
-
 
 /* navbar */
 
@@ -151,7 +148,6 @@ pre {
   margin: 0 auto;
   padding: 0 20px;
 }
-
 
 .nav-options select {
   padding: 5px;
