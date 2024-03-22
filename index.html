@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Display</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/monokai-sublime.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-options">
+
+                <select id="select-language">
+                    <option value="a1">EXPT 1A</option>
+                    <option value="a02">EXPT 1B</option>
+                    <option value="a2">EXPT 2</option>
+                    <option value="a4">EXPT 4</option>
+                    <option value="a5">EXPT 5</option>
+                    <option value="a6">EXPT 6</option>
+                    <option value="a7">EXPT 7</option>
+                    <option value="a9">EXPT 9</option>
+                    <option value="a11">EXPT 11</option>
+                    <option value="a12">EXPT 12</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <div class="code-container">
+        <pre><code id="code-block" class="code language-javascript">
+        </code></pre>
+        <button class="copy-button" onclick="copyCode()">Copy</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+
+</body>
+
+</html>

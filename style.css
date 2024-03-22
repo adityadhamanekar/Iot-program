@@ -1,0 +1,166 @@
+/* Styles from previous code unchanged */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111; /* Dark grey, almost black */
+}
+
+.code-container {
+  max-width: 800px;
+  margin: 20px auto;
+  position: relative;
+}
+pre {
+  background-color: #3c3a3a; /* Light grey */
+  padding: 20px;
+  border-radius: 5px;
+  overflow-x: auto;
+  /* color: #333; Dark grey */
+  font-size: 16px; /* Adjust the font size as needed */
+  line-height: 1.5; /* Add space between lines */
+}
+
+.copy-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #66d9ef; /* Blue */
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: #5cb8d1; /* Lighter blue */
+}
+
+/* Dark mode specific styles */
+.dark-mode .code-container {
+  background-color: #272822; /* Dark grey */
+}
+
+.dark-mode pre {
+  background-color: #272822; /* Dark grey */
+  color: #f8f8f2; /* Light grey */
+}
+
+.dark-mode .copy-button {
+  background-color: #66d9ef; /* Blue */
+}
+
+.dark-mode .copy-button:hover {
+  background-color: #5cb8d1; /* Lighter blue */
+}
+
+/* Highlight.js styles */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #272822; /* Dark grey */
+  color: #f8f8f2; /* Light grey */
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #75715e; /* Grey */
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-built_in,
+.hljs-name,
+.hljs-tag {
+  color: #f92672; /* Pink */
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-section,
+.hljs-attribute,
+.hljs-literal,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-addition {
+  color: #a6e22e; /* Green */
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-deletion {
+  color: #f92672; /* Pink */
+}
+
+.hljs-number,
+.hljs-regexp,
+.hljs-variable,
+.hljs-template-string,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-meta {
+  color: #ae81ff; /* Purple */
+}
+
+.hljs-attribute
+ {
+  color: #66d9ef; /* Blue */
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-name {
+  font-weight: bold;
+}
+
+
+.hljs-meta,
+.hljs-attribute,
+.hljs-symbol,
+.hljs-number,
+.hljs-params,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-link {
+  color: #f92672; /* Pink */
+}
+
+
+/* navbar */
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.nav-options select {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
