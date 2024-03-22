@@ -329,7 +329,7 @@ client.loop_forever()
 
 `;
 
-const programList = { a1, a02, a2, a4, a5, a6, a7, a9, a11, a12 };
+const programList = { a1, a02, a2, a4, a5, a6, a7, a9, a11, a12 , a7b };
 
 var codeBlock = document.getElementById("code-block");
 codeBlock.textContent = programList["a1"];
