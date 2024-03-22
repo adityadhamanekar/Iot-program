@@ -8,6 +8,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/monokai-sublime.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+
     <script src="script.js" type="module" defer></script>
 </head>
 
@@ -39,8 +41,20 @@
 
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
 
 </body>
+<script>
+    function copyCodeFromHtml() {
+        var code = document.querySelector('#code-content-block').textContent;
+        navigator.clipboard
+            .writeText(code)
+            .then(function () {
+                alert("Code copied to clipboard!");
+            })
+            .catch(function (error) {
+                console.error("Failed to copy code: ", error);
+            });
+    }
+</script>
 
 </html>

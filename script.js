@@ -329,7 +329,23 @@ client.loop_forever()
 
 `;
 
-const programList = { a1, a02, a2, a4, a5, a6, a7, a9, a11, a12 , a7b };
+const htmlCode = `
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+ &lt;meta charset="UTF-8"&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+ &lt;title&gt;DHT11 TCP Server&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;h1&gt;DHT11 TCP Server for JCE EC &lt;/h1&gt;
+ &lt;p&gt;Temperature: {{ temperature }} °C&lt;/p&gt;
+ &lt;p&gt;Humidity: {{ humidity }} %&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+`;
+
+const programList = { a1, a02, a2, a4, a5, a6, a7, a9, a11, a12, a7b };
 
 var codeBlock = document.getElementById("code-block");
 codeBlock.textContent = programList["a1"];
@@ -339,8 +355,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
   selectLanguage.addEventListener("change", function () {
     var selectedValue = selectLanguage.value;
+    if (selectedValue === "a11") {
+      const htmlElement = document.createElement("div");
+      htmlElement.classList.add("code-container", "hellow");
+      htmlElement.insertAdjacentHTML(
+        "afterbegin",
+        `<button class="copy-button" onclick="copyCodeFromHtml()">Copy</button>
+        <pre><code id="code-content-block" class="code language-javascript">
+        ${htmlCode}
+        </code></pre>`
+      );
+
+      document
+        .querySelector("body")
+        .insertAdjacentElement("beforeend", htmlElement);
+    }
     codeBlock.textContent = programList[selectedValue];
-    initializeHighlighting()
+    initializeHighlighting();
   });
 });
 
